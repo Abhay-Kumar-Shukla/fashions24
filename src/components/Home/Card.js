@@ -9,15 +9,14 @@ import Typography from '@mui/material/Typography';
 export default function ImgMediaCard(props) {
   console.log(props.data)
   return (
-    <Card sx={{ maxWidth: 200 }}>
+    <Card style={{margin:'20px',border:'2px solid black'}} sx={{ maxWidth: 200 }}>
       <CardMedia
         component="img"
-        alt="green iguana"
-        image={props.data.image_url}
+        image={props.data.img}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {props.data.price}
+          Rs. {props.data.price}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {props.data.type}

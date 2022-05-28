@@ -28,12 +28,13 @@ export default function Home(props) {
     console.log(docs.data());
   });
 
-  getDocs(collection(db, "products")).then((docdata) => {
+  getDocs(collection(db, "Products")).then((docdata) => {
     let d = [];
     docdata.forEach((doc) => {
       d.push(doc.data());
     });
     setpdata(d);
+    console.log(d)
   });
 
   if (udata == null || pdata == null) {
@@ -43,10 +44,46 @@ export default function Home(props) {
       </div>
     );
   } else {
+    let agelist = [];
+    let genderlist = [];
+    let makeuplist = [];
+    let glasseslist = [];
+    let fhairlist = [];
     let list = [];
+
     pdata.forEach((doc) => {
-      list.push(<Card data={doc} />);
+     if(doc.ageMin <= udata.faceAttributes.age && udata.faceAttributes.age <= doc.ageMax)
+      agelist.push(<Card data={doc} type='age' />);
     });
+
+    pdata.forEach((doc) => {
+      if(doc.gender == udata.faceAttributes.gender )
+       genderlist.push(<Card data={doc} type='gender' />);
+     });
+
+     pdata.forEach((doc) => {
+      if(doc.glasses == udata.faceAttributes.glasses )
+       glasseslist.push(<Card data={doc} type='glasses' glasses={udata.faceAttributes.glasses} />);
+     });
+
+     pdata.forEach((doc) => {
+      if(udata.faceAttributes.makeup.eyeMakeup)
+       makeuplist.push(<Card data={doc} type='makeup' makeup='eyeMakeup' />);
+
+      if(udata.faceAttributes.makeup.lipMakeup)
+       makeuplist.push(<Card data={doc} type='makeup' makeup='lipMakeup' />);
+     });
+
+     pdata.forEach((doc) => {
+      if(udata.faceAttributes.facialHair.beard > 0.5)
+       fhairlist.push(<Card data={doc} type='fhair' fhair='beard' />);
+      if(udata.faceAttributes.facialHair.moustache > 0.5)
+       fhairlist.push(<Card data={doc} type='fhair' fhair='moustache' />);
+     });
+
+    pdata.forEach((doc) =>{
+      list.push(<Card data={doc} />)
+    })
     return (
       <div>
         <MenuAppBar />
@@ -59,7 +96,17 @@ export default function Home(props) {
           >
             Recommended Products
           </Typography>
-          {list}
+          <Typography style={{ marginBottom: "20px", color:'grey', textDecoration: "underline" }} variant="h5">Recommended on basis of age</Typography>
+          <Container style={{display:'grid',gridTemplateColumns:'30% 30% 30%'}}>{agelist}</Container>
+          <Typography style={{ marginBottom: "20px", color:'grey', textDecoration: "underline" }} variant="h5">Recommended on basis of gender</Typography>
+          <Container style={{display:'grid',gridTemplateColumns:'30% 30% 30%'}}>{genderlist}</Container>
+          <Typography style={{ marginBottom: "20px", color:'grey', textDecoration: "underline" }} variant="h5">Recommended on basis of make up</Typography>
+          <Container style={{display:'grid',gridTemplateColumns:'30% 30% 30%'}}>{makeuplist}</Container>
+          <Typography style={{ marginBottom: "20px", color:'grey', textDecoration: "underline" }} variant="h5">Recommended on basis of glasses</Typography>
+          <Container style={{display:'grid',gridTemplateColumns:'30% 30% 30%'}}>{glasseslist}</Container>
+          <Typography style={{ marginBottom: "20px", color:'grey', textDecoration: "underline" }} variant="h5">Recommended on basis of facial hair</Typography>
+          <Container style={{display:'grid',gridTemplateColumns:'30% 30% 30%'}}>{fhairlist}</Container>
+          
           <Typography
             variant="h4"
             style={{
@@ -71,6 +118,7 @@ export default function Home(props) {
           >
             All Products
           </Typography>
+          <Container style={{display:'flex'}}>{list}</Container>
         </Container>
       </div>
     );

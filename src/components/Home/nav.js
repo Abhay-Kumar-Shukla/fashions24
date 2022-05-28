@@ -30,13 +30,16 @@ export default function MenuAppBar() {
 
   const handleClose = () => {
     setAnchorEl(null);
-    navigate('/profile')
+    //navigate('/profile')
   };
 
   const logout = () =>{
       signOut(auth)
       navigate('/')
       console.log("navigating to login")
+  }
+  const myprof = () =>{
+    navigate('/profile')
   }
 
   return (
@@ -82,7 +85,7 @@ export default function MenuAppBar() {
                 onClose={handleClose}
               >
                 <MenuItem onClick={logout}>Log out</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={myprof}>My account</MenuItem>
               </Menu>
             </div>
           )}
