@@ -1,0 +1,93 @@
+[
+    {
+        "id":0,
+        "image_url": "https://m.media-amazon.com/images/I/41XFo5AA1OL._US40_.jpg",
+        "title": "Black shoes",
+        "price": "5600",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["male", "14"]
+
+    },
+    {
+        "id":1,
+        "image_url": "https://m.media-amazon.com/images/I/411HCOpsk7L._SR38,50_.jpg",
+        "title": " Checked Shirt",
+        "price": "560",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["male", "20"]
+    },
+    {
+        "id":2,
+        "image_url": "https://m.media-amazon.com/images/I/512sw6gqBUL._SR38,50_.jpg",
+        "title": "Belt ",
+        "price": "156",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["male", "19"]
+    },
+    {
+        "id":3,
+        "image_url": "https://m.media-amazon.com/images/I/41CdJ4ei-uL._SS40_.jpg",
+        "title": "Brown Wallet",
+        "price": "699",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["male", "25"]
+    },
+    {
+        "id":4,
+        "image_url": "https://m.media-amazon.com/images/I/31tPL6m1ZLL._SS40_.jpg",
+        "title": "Deodrant",
+        "price": "699",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["male", "25"]
+    },
+    {
+        "id":5,
+        "image_url": "https://m.media-amazon.com/images/I/51B9vEkOeSL._SS40_.jpg",
+        "title": "Ustraa Beard Growth Oil",
+        "price": "800",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["male", "25"]
+    },
+    {
+        "id":6,
+        "image_url": "https://m.media-amazon.com/images/I/41t04ibtkxS._SS40_.jpg",
+        "title": "Trimmer",
+        "price": "1349",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["male", "25"]
+    },
+    {
+        "id":7,
+        "image_url": "https://m.media-amazon.com/images/I/51y1mc0qErL._US40_.jpg",
+        "title": "Red Purse",
+        "price": "1799",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["Female", "25"]
+    },
+    {
+        "id":8,
+        "image_url": "https://m.media-amazon.com/images/I/31bV3X6lxUL._SS40_.jpg",
+        "title": "Hair Dryer",
+        "price": "699",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["Female", "25"]
+    },
+    {
+        
+            "id":9,
+            "image_url": "https://m.media-amazon.com/images/I/41MplXilepS._SS40_.jpg",
+            "title": "Professional Hair Dryer",
+            "price": "799",
+            "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+            "tags":["Female", "25"]
+        
+    },
+    {
+        "id":10,
+        "image_url": "https://m.media-amazon.com/images/I/41ZBDYVsNtL._SR38,50_.jpg",
+        "title": "Banarasi Saree",
+        "price": "699",
+        "description": "Quintessentially Indian, the saree is an outfit which women can carry off with great panache. With the right material and drape, it can accentuate the beauty of women of all ages and forms. Be it a festival or a wedding, sarees are a hot favorite worldwide due to its popularity. Sarees give you the opportunity to provide a modern touch to a traditional Indian attire. ",
+        "tags":["Female", "25" , "Fashion"]
+    }
+]
